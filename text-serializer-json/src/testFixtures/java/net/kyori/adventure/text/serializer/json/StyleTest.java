@@ -164,8 +164,8 @@ class StyleTest extends SerializerTest {
       json -> {
         json.add(JSONComponentConstants.HOVER_EVENT_SNAKE, object(hoverEvent -> {
           hoverEvent.addProperty(JSONComponentConstants.HOVER_EVENT_ACTION, name(HoverEvent.Action.SHOW_ENTITY));
-          hoverEvent.addProperty(JSONComponentConstants.SHOW_ENTITY_TYPE, "minecraft:pig");
-          hoverEvent.add(JSONComponentConstants.SHOW_ENTITY_ID, array(arr -> {
+          hoverEvent.addProperty(JSONComponentConstants.SHOW_ENTITY_ID, "minecraft:pig");
+          hoverEvent.add(JSONComponentConstants.SHOW_ENTITY_UUID, array(arr -> {
             arr.add(dolores.getMostSignificantBits() >> 32);
             arr.add((int) (dolores.getMostSignificantBits() & 0xffffffffl));
             arr.add(dolores.getLeastSignificantBits() >> 32);

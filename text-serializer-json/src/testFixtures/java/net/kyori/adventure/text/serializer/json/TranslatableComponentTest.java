@@ -92,8 +92,8 @@ final class TranslatableComponentTest extends SerializerTest {
           }));
           item.add(JSONComponentConstants.HOVER_EVENT_SNAKE, object(event -> {
             event.addProperty(JSONComponentConstants.HOVER_EVENT_ACTION, name(HoverEvent.Action.SHOW_ENTITY));
-            event.addProperty(JSONComponentConstants.SHOW_ENTITY_TYPE, "minecraft:player");
-            event.add(JSONComponentConstants.SHOW_ENTITY_ID, array(arr -> {
+            event.addProperty(JSONComponentConstants.SHOW_ENTITY_ID, "minecraft:player");
+            event.add(JSONComponentConstants.SHOW_ENTITY_UUID, array(arr -> {
               arr.add(-351136121);
               arr.add(-1961211580);
               arr.add(-1118969688);
